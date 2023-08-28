@@ -1,0 +1,61 @@
+"0","library(plotly)"
+"2","Loading required package: ggplot2
+"
+"2","Registered S3 method overwritten by 'data.table':
+  method           from
+  print.data.table     
+"
+"2","Registered S3 method overwritten by 'htmlwidgets':
+  method           from         
+  print.htmlwidget tools:rstudio
+"
+"2","
+Attaching package: ‘plotly’
+
+"
+"2","The following object is masked from ‘package:ggplot2’:
+
+    last_plot
+
+"
+"2","The following object is masked from ‘package:stats’:
+
+    filter
+
+"
+"2","The following object is masked from ‘package:graphics’:
+
+    layout
+
+"
+"0","x <- c(""Product A"", ""Product B"", ""Product C"")"
+"0","y <- c(20, 14, 23)"
+"0","y2 <- c(16, 12, 27)"
+"0","text <- c(""27% market share"", ""24% market share"", ""19% market share"")"
+"0","data <- data.frame(x, y, y2, text)"
+"0",""
+"0","fig <- data %>% plot_ly()"
+"0","fig <- fig %>% add_trace("
+"0","  x = ~x, y = ~y, type = ""bar"","
+"0","  text = y, textposition = ""auto"","
+"0","  marker = list("
+"0","    color = ""rgb(158, 202, 225)"","
+"0","    line = list(color = ""rgb(8, 48, 107)"", width = 1.5)"
+"0","  )"
+"0",")"
+"0","fig <- fig %>% add_trace("
+"0","  x = ~x, y = ~y2, type = ""bar"","
+"0","  text = y2, textposition = ""auto"","
+"0","  marker = list("
+"0","    color = ""rgb(58, 200, 225)"","
+"0","    line = list(color = ""rgb(8, 48, 107)"", width = 1.5)"
+"0","  )"
+"0",")"
+"0","fig <- fig %>% layout("
+"0","  title = ""January 2013 Sales Report"","
+"0","  barmode = ""group"","
+"0","  xaxis = list(title = """"),"
+"0","  yaxis = list(title = """")"
+"0",")"
+"0",""
+"0","fig"
