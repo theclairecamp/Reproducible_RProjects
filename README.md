@@ -18,4 +18,4 @@ Procedure for restoring R environment from renv()
 2. Open project that was downloaded
 3. Then run - renv::restore() - to restore the R environment that was created for initial project
 
-*Note: When creating a snapshot, it will look through all the r files in your project, so if there are old files you will no longer use, place them in a different folder (i.e., have a parent folder that houses old code and your project folder)*
+*Note: When creating a snapshot, it will look through all the r files in your project, so if there are old files you will no longer use, place them in a different folder so those dependencies aren't created (i.e., have a parent folder that houses old code and your project folder)*
