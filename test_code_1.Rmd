@@ -9,10 +9,10 @@ Testing how to create reproducible R analyses.
 
 Trying to use renv from [this site](https://appsilon.com/renv-how-to-manage-dependencies-in-r/).
 
-# First must activate renv
-Can either activate when making a new project or after by:
+# First must initialize renv
+Can either initialize when making a new project in GUI when creating project or after by:
 ```{r eval=F}
-renv::activate()
+renv::init()
 ```
 
 
