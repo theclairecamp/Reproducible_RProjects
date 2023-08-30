@@ -3,6 +3,8 @@ Documenting protocol on how to create reproducible R projects
 
 Utilizing procedure found on: https://appsilon.com/renv-how-to-manage-dependencies-in-r/
 
+For more info on renv(): https://rstudio.github.io/renv/articles/renv.html
+
 Procedure for creating reproducible environment:
 1. Create R Project
 2. Activate renv environment
